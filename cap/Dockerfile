@@ -3,5 +3,5 @@ ENV VERSION 1.0
 WORKDIR /app
 COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install
-COPY . .
+COPY /app .
 CMD [ "node", "server.js" ]
